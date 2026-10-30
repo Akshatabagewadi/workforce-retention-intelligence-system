@@ -1,10 +1,10 @@
 # Workforce Retention Intelligence System
 
-**Explainable AI-Powered Employee Engagement & Retention Analytics Platform**
+## Explainable AI-Powered Employee Engagement & Retention Analytics Platform
 
 ## 1. Project Overview
 
-The Workforce Retention Intelligence System is an AI-powered analytics platform designed to analyze employee engagement, workload, career growth and retention patterns.
+The Workforce Retention Intelligence System is an AI-powered analytics platform designed to analyze employee engagement, workload, career growth, and retention patterns.
 
 It uses machine learning to generate employee-level retention risk scores and explainable supporting signals. HR teams can use these insights to identify areas where employees may benefit from additional support.
 
@@ -59,9 +59,11 @@ The project contains synthetic employee histories covering 24 months.
 - Prediction horizon end: `2027-04-30`
 - Synthetic voluntary attrition rate: 10%
 
+All employee records and outcomes are synthetic and generated for demonstration purposes.
+
 ## 5. Machine Learning
 
-The platform uses a Random Forest Classifier.
+The platform uses a Random Forest Classifier to identify patterns associated with synthetic employee attrition outcomes.
 
 ### Features considered
 
@@ -119,7 +121,7 @@ The Streamlit dashboard includes:
 ## 8. Project Structure
 
 ```text
-Workforce-Retention-Intelligence/
+workforce-retention-intelligence-system/
 │
 ├── analytics/
 │   ├── evaluation.py
@@ -133,6 +135,9 @@ Workforce-Retention-Intelligence/
 │   └── models.py
 │
 ├── generator/
+│   ├── init_db.py
+│   ├── master_data.py
+│   ├── data_generator.py
 │   ├── attrition_generator.py
 │   └── export_data.py
 │
@@ -151,9 +156,10 @@ Workforce-Retention-Intelligence/
 │   └── exports/
 │
 ├── docs/
+│   └── AI_PROMPT_HISTORY.md
 │
-├── init_db.py
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -162,14 +168,15 @@ Workforce-Retention-Intelligence/
 ### Prerequisites
 
 - Python 3.11 or later
-- pip
 - Git
+- pip
 
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd YOUR_PROJECT_FOLDER
+git clone https://github.com/Akshatabagewadi/workforce-retention-intelligence-system.git
+
+cd workforce-retention-intelligence-system
 ```
 
 ### Step 2: Create a virtual environment
@@ -178,7 +185,7 @@ cd YOUR_PROJECT_FOLDER
 python -m venv venv
 ```
 
-### Step 3: Activate the environment
+### Step 3: Activate the virtual environment
 
 Windows PowerShell:
 
@@ -189,54 +196,84 @@ Windows PowerShell:
 ### Step 4: Install dependencies
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### Step 5: Initialize the database
 
-Only when creating a fresh database:
-
 ```bash
-python init_db.py
+python -m generator.init_db
 ```
 
-### Step 6: Generate employee features
+### Step 6: Generate master data
+
+```bash
+python -m generator.master_data
+```
+
+This creates the initial employee, role, and team records.
+
+### Step 7: Generate employee histories
+
+```bash
+python -m generator.data_generator
+```
+
+This generates the employee history records, including tenure, engagement, workload, compensation, and promotion data.
+
+### Step 8: Generate employee features
 
 ```bash
 python -m analytics.feature_engineering
 ```
 
-### Step 7: Train and evaluate the model
+### Step 9: Train and evaluate the machine learning model
 
 ```bash
 python -m analytics.evaluation
 ```
 
-### Step 8: Generate exports
+### Step 10: Export data
 
 ```bash
 python -m generator.export_data
 ```
 
-### Step 9: Run validation
+### Step 11: Validate the generated data
 
 ```bash
 python -m validation.validate_data
 ```
 
-### Step 10: Test reproducibility
+### Step 12: Run automated tests
+
+```bash
+python -m pytest -v
+```
+
+### Step 13: Verify reproducibility
 
 ```bash
 python -m generator.attrition_generator
 ```
 
-This command runs the safe in-memory reproducibility test. It does not modify existing database records.
+This runs the in-memory reproducibility check. It generates attrition outcomes twice using the fixed seed and compares their SHA-256 checksums. It does not modify existing database records.
 
-### Step 11: Launch dashboard
+### Step 14: Launch the dashboard
 
 ```bash
 python -m streamlit run dashboard/app.py
 ```
+
+If the default port is occupied, use:
+
+```bash
+python -m streamlit run dashboard/app.py --server.port 8505
+```
+
+The dashboard will open in your browser.
+
+**Important:** The database and trained model are excluded from GitHub. The data-generation commands should only be run against a fresh database. The reproducibility command checks deterministic outcome generation from existing employee history; it does not regenerate the complete dataset.
 
 ## 10. Generated Model Outputs
 
@@ -248,6 +285,8 @@ The model generates:
 - `confusion_matrix.csv`
 - `model_metrics.json`
 
+These files are saved in `data/processed/`.
+
 ## 11. Data Exports
 
 The export script generates CSV and JSON files for all ten database tables, together with:
@@ -256,7 +295,9 @@ The export script generates CSV and JSON files for all ten database tables, toge
 - `source_manifest.json`
 - `validation_summary.txt`
 
-The SHA-256 checksums in the source manifest help verify exported file integrity.
+The source manifest contains file information and SHA-256 checksums to help verify exported file integrity.
+
+The SQL seed file contains database records and assumes that the corresponding database schema has already been created.
 
 ## 12. Validation and Reproducibility
 
@@ -272,7 +313,7 @@ The validation process checks:
 - Human-review requirements
 - Four negative scenario rules
 
-The reproducibility test generates outcomes twice using seed `20261022` and compares SHA-256 checksums.
+The reproducibility test generates attrition outcomes twice using seed `20261022` and compares SHA-256 checksums.
 
 ## 13. Responsible AI and Limitations
 
@@ -280,7 +321,7 @@ This project uses entirely synthetic data and simulated attrition labels.
 
 The model scores are not calibrated real-world probabilities. Risk categories and supporting signals are intended for demonstration and supportive HR review only.
 
-The platform must not make automated hiring, firing, promotion or other employment decisions.
+The platform must not make automated hiring, firing, promotion, or other employment decisions.
 
 Human review and contextual assessment are necessary before any intervention.
 
