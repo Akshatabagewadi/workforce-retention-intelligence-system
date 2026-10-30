@@ -1,0 +1,62 @@
+[
+    {
+        "role_id": "ROLE-001",
+        "role_name": "Software Engineer",
+        "job_level": "LEVEL-2",
+        "created_at": "2026-10-30T13:56:58.378209"
+    },
+    {
+        "role_id": "ROLE-002",
+        "role_name": "Senior Software Engineer",
+        "job_level": "LEVEL-3",
+        "created_at": "2026-10-30T13:56:58.378212"
+    },
+    {
+        "role_id": "ROLE-003",
+        "role_name": "Data Analyst",
+        "job_level": "LEVEL-2",
+        "created_at": "2026-10-30T13:56:58.378213"
+    },
+    {
+        "role_id": "ROLE-004",
+        "role_name": "Data Scientist",
+        "job_level": "LEVEL-3",
+        "created_at": "2026-10-30T13:56:58.378214"
+    },
+    {
+        "role_id": "ROLE-005",
+        "role_name": "Product Manager",
+        "job_level": "LEVEL-4",
+        "created_at": "2026-10-30T13:56:58.378215"
+    },
+    {
+        "role_id": "ROLE-006",
+        "role_name": "Business Analyst",
+        "job_level": "LEVEL-2",
+        "created_at": "2026-10-30T13:56:58.378216"
+    },
+    {
+        "role_id": "ROLE-007",
+        "role_name": "QA Engineer",
+        "job_level": "LEVEL-2",
+        "created_at": "2026-10-30T13:56:58.378216"
+    },
+    {
+        "role_id": "ROLE-008",
+        "role_name": "DevOps Engineer",
+        "job_level": "LEVEL-3",
+        "created_at": "2026-10-30T13:56:58.378217"
+    },
+    {
+        "role_id": "ROLE-009",
+        "role_name": "Technical Lead",
+        "job_level": "LEVEL-4",
+        "created_at": "2026-10-30T13:56:58.378218"
+    },
+    {
+        "role_id": "ROLE-010",
+        "role_name": "HR Analyst",
+        "job_level": "LEVEL-2",
+        "created_at": "2026-10-30T13:56:58.378219"
+    }
+]

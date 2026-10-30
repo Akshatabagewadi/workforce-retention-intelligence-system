@@ -1,0 +1,62 @@
+[
+    {
+        "team_id": "TEAM-001",
+        "team_name": "Engineering",
+        "department": "Technology",
+        "created_at": "2026-10-30T13:56:58.380289"
+    },
+    {
+        "team_id": "TEAM-002",
+        "team_name": "Data Analytics",
+        "department": "Technology",
+        "created_at": "2026-10-30T13:56:58.380292"
+    },
+    {
+        "team_id": "TEAM-003",
+        "team_name": "Data Science",
+        "department": "Technology",
+        "created_at": "2026-10-30T13:56:58.380293"
+    },
+    {
+        "team_id": "TEAM-004",
+        "team_name": "Product",
+        "department": "Product",
+        "created_at": "2026-10-30T13:56:58.380294"
+    },
+    {
+        "team_id": "TEAM-005",
+        "team_name": "Quality Assurance",
+        "department": "Technology",
+        "created_at": "2026-10-30T13:56:58.380295"
+    },
+    {
+        "team_id": "TEAM-006",
+        "team_name": "DevOps",
+        "department": "Technology",
+        "created_at": "2026-10-30T13:56:58.380295"
+    },
+    {
+        "team_id": "TEAM-007",
+        "team_name": "Human Resources",
+        "department": "HR",
+        "created_at": "2026-10-30T13:56:58.380296"
+    },
+    {
+        "team_id": "TEAM-008",
+        "team_name": "Business Analysis",
+        "department": "Business",
+        "created_at": "2026-10-30T13:56:58.380297"
+    },
+    {
+        "team_id": "TEAM-009",
+        "team_name": "Platform",
+        "department": "Technology",
+        "created_at": "2026-10-30T13:56:58.380297"
+    },
+    {
+        "team_id": "TEAM-010",
+        "team_name": "Operations",
+        "department": "Operations",
+        "created_at": "2026-10-30T13:56:58.380298"
+    }
+]

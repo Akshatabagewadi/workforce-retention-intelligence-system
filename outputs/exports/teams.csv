@@ -1,0 +1,11 @@
+team_id,team_name,department,created_at
+TEAM-001,Engineering,Technology,2026-10-30T13:56:58.380289
+TEAM-002,Data Analytics,Technology,2026-10-30T13:56:58.380292
+TEAM-003,Data Science,Technology,2026-10-30T13:56:58.380293
+TEAM-004,Product,Product,2026-10-30T13:56:58.380294
+TEAM-005,Quality Assurance,Technology,2026-10-30T13:56:58.380295
+TEAM-006,DevOps,Technology,2026-10-30T13:56:58.380295
+TEAM-007,Human Resources,HR,2026-10-30T13:56:58.380296
+TEAM-008,Business Analysis,Business,2026-10-30T13:56:58.380297
+TEAM-009,Platform,Technology,2026-10-30T13:56:58.380297
+TEAM-010,Operations,Operations,2026-10-30T13:56:58.380298

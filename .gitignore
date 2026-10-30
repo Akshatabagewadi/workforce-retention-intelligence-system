@@ -1,0 +1,40 @@
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database files and backups
+*.db
+*.sqlite
+*.sqlite3
+*backup*.db
+
+# Temporary and log files
+*.log
+*.tmp
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Generated model artifact
+*.joblib
+outputs/exports/workforce_seed.sql

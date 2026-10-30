@@ -1,0 +1,134 @@
+{
+    "project": "Workforce Retention Intelligence System",
+    "description": "Explainable AI-powered employee engagement and retention analytics platform",
+    "random_seed": 20261022,
+    "observation_date": "2026-10-30",
+    "horizon_end_date": "2027-04-30",
+    "database": "SQLite",
+    "source": "Existing workforce_retention.db",
+    "database_modified": false,
+    "record_counts": {
+        "roles": 10,
+        "teams": 10,
+        "employees": 10000,
+        "tenure_snapshots": 217275,
+        "engagement_surveys": 217275,
+        "workload_snapshots": 217275,
+        "compensation_bands": 217275,
+        "promotion_history": 2165,
+        "attrition_outcomes": 10000,
+        "interventions": 8268
+    },
+    "exports": [
+        {
+            "file": "roles.csv",
+            "size_bytes": 648,
+            "sha256": "476dbc20099a907db90c0231407288defd00d5b21b7e8b437d5f3463efeb9ab6"
+        },
+        {
+            "file": "roles.json",
+            "size_bytes": 1731,
+            "sha256": "e9908dd09d7bcbfc4f10ae5ee73558249aa00c007d5991b9c51ca35b97876354"
+        },
+        {
+            "file": "teams.csv",
+            "size_bytes": 635,
+            "sha256": "804b449cfdd838d654278eaffd53b797bacbad42072d0b81b8933c5d6033cd8e"
+        },
+        {
+            "file": "teams.json",
+            "size_bytes": 1727,
+            "sha256": "836ed6e3398b29c46503475be40d3b498a3b3bc4203e386f9c4b3cfca0e8e9c3"
+        },
+        {
+            "file": "employees.csv",
+            "size_bytes": 760082,
+            "sha256": "9cb1835dd7ce72c1d8581724b4e3ae4568a0c04e78851a54ed3f7e0b6253019c"
+        },
+        {
+            "file": "employees.json",
+            "size_bytes": 2770003,
+            "sha256": "5443ae8e7845cee0d0e139bb9b10196e4764c662cd63b6526d09f6b02d7a72c2"
+        },
+        {
+            "file": "tenure_snapshots.csv",
+            "size_bytes": 14554693,
+            "sha256": "cb2ec4b050467eb20865da336fe3cdafa666025bfe6e78daeef6435307bbc5ab"
+        },
+        {
+            "file": "tenure_snapshots.json",
+            "size_bytes": 51274102,
+            "sha256": "02f8cbc59aa3f492985b898a209ff44d7ffb3b8ffda1291423d5128290a9d274"
+        },
+        {
+            "file": "engagement_surveys.csv",
+            "size_bytes": 13761435,
+            "sha256": "dc97d81bee118342a2bf3089ff2b71e93eae42475045318235f2ef219ff1aab4"
+        },
+        {
+            "file": "engagement_surveys.json",
+            "size_bytes": 60952269,
+            "sha256": "6013f7ef2229cf142637b85d45514fa5ce5de021979a2bedc788f9d043453064"
+        },
+        {
+            "file": "workload_snapshots.csv",
+            "size_bytes": 10785594,
+            "sha256": "b4d491c9bb9bb82e5f638bda533181ce1fdecd0e6dc5acf680f1b00b4d25aa48"
+        },
+        {
+            "file": "workload_snapshots.json",
+            "size_bytes": 49677739,
+            "sha256": "6a782d95b3a2db74e419426088f6dbad0640d0f33a6f121fc9f471f487fa2bff"
+        },
+        {
+            "file": "compensation_bands.csv",
+            "size_bytes": 12982589,
+            "sha256": "43d5d4aa8b5a9aae6a71d6c4d2e9738374c9780135b756fecf92f65a55223aba"
+        },
+        {
+            "file": "compensation_bands.json",
+            "size_bytes": 59044795,
+            "sha256": "eead8708d1a1ed10354a3c49524f37846248cf7239603d494b5e9f298d9ca760"
+        },
+        {
+            "file": "promotion_history.csv",
+            "size_bytes": 140810,
+            "sha256": "277401becd561abfdbbd36138093fa49d73d7a9abe4fa7afce8e917d14c75710"
+        },
+        {
+            "file": "promotion_history.json",
+            "size_bytes": 545583,
+            "sha256": "3f60232a2f7753c19c0c40bf9120699eab93d59d1ccf2078c878f20100d6d254"
+        },
+        {
+            "file": "attrition_outcomes.csv",
+            "size_bytes": 624110,
+            "sha256": "93fc7643c55a31cb587a4b6253ac7a6d12f7d8e268ff43f108c0579dc9189b6c"
+        },
+        {
+            "file": "attrition_outcomes.json",
+            "size_bytes": 2892003,
+            "sha256": "462803fbed79ddd0374b1d4aa868ed564d2399fca79afe499231240a7f48f763"
+        },
+        {
+            "file": "interventions.csv",
+            "size_bytes": 886816,
+            "sha256": "75fc7d0af7d338733ef2f1be444cfab9866217c5a148942b65083499c5ee7842"
+        },
+        {
+            "file": "interventions.json",
+            "size_bytes": 2871031,
+            "sha256": "bbf114bdcfec32acea8b0da9239cad4403ee6319e92994a792176cfe8175024b"
+        },
+        {
+            "file": "workforce_seed.sql",
+            "size_bytes": 203562285,
+            "sha256": "d039cdf53c2c2bac701802fdd6ec5141466f54ce1755e5b13571ed9314100e8a"
+        },
+        {
+            "file": "validation_summary.txt",
+            "size_bytes": 1517,
+            "sha256": "14779554e662aeaf9ab8f727cca5d7945695fd2399e3d56a6959359bd3d24d8a"
+        }
+    ]
+}

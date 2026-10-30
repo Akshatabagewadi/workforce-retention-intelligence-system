@@ -1,0 +1,5 @@
+scenario_id,issue_type,description,expected_result,actual_result
+NEG-001,FUTURE_DATA_LEAKAGE,Future termination information used in pre-outcome features.,REJECT,REJECT
+NEG-002,MISSING_SURVEY_BIAS,Missing survey response incorrectly treated as low engagement.,DO_NOT_CLASSIFY_AS_NEGATIVE,DO_NOT_CLASSIFY_AS_NEGATIVE
+NEG-003,OUTCOME_DATE_MISMATCH,Attrition outcome has no matching termination date.,REJECT,REJECT
+NEG-004,NO_HUMAN_REVIEW,Intervention is completed without human review.,FLAG_FOR_REVIEW,FLAG_FOR_REVIEW

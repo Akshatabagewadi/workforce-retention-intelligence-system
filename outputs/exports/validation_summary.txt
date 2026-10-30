@@ -1,0 +1,64 @@
+
+================================
+WORKFORCE DATA VALIDATION
+================================
+
+1. RECORD COUNTS
+employees: 10000
+roles: 10
+teams: 10
+tenure_snapshots: 217275
+engagement_surveys: 217275
+workload_snapshots: 217275
+compensation_bands: 217275
+promotion_history: 2165
+attrition_outcomes: 10000
+interventions: 8268
+
+2. EMPLOYEE VALIDATION
+PASS: Employee IDs are unique.
+PASS: Employee required fields are present.
+
+3. FOREIGN KEY VALIDATION
+PASS: Employee -> Role
+PASS: Employee -> Team
+PASS: Tenure -> Employee
+PASS: Tenure -> Role
+PASS: Tenure -> Team
+PASS: Survey -> Employee
+PASS: Workload -> Employee
+PASS: Compensation -> Employee
+PASS: Promotion -> Employee
+PASS: Promotion -> Previous Role
+PASS: Promotion -> New Role
+PASS: Intervention -> Employee
+PASS: Outcome -> Employee
+
+4. SURVEY VALIDATION
+PASS: Survey scores are within valid ranges.
+Missing or partial surveys: 21628
+
+5. DATE VALIDATION
+PASS: No future surveys.
+PASS: No future workloads.
+PASS: No future tenure snapshots.
+
+6. ATTRITION VALIDATION
+PASS: Attrition outcomes are consistent.
+
+7. INTERVENTION VALIDATION
+PASS: No completed or in-progress intervention lacks review.
+
+8. NEGATIVE SCENARIO RULE CHECKS
+PASS: NEG-001 Future data leakage
+PASS: NEG-002 Missing survey bias
+PASS: NEG-003 Outcome date mismatch
+PASS: NEG-004 No human review
+
+================================
+VALIDATION SUMMARY
+================================
+Errors: 0
+Warnings: 0
+
+DATA VALIDATION PASSED.

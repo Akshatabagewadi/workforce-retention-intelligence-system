@@ -1,0 +1,21 @@
+{
+    "model": "Random Forest",
+    "total_employees": 10000,
+    "training_records": 8000,
+    "testing_records": 2000,
+    "accuracy": 0.6165,
+    "balanced_accuracy": 0.5558333333333334,
+    "precision": 0.12648221343873517,
+    "recall": 0.48,
+    "f1_score": 0.20020855057351408,
+    "roc_auc": 0.62735,
+    "pr_auc": 0.20710681093095773,
+    "random_seed": 20261022,
+    "evaluation_type": "Random employee holdout",
+    "risk_score_thresholds": {
+        "low": "0-30",
+        "medium": "Above 30-60",
+        "high": "Above 60-100"
+    },
+    "risk_score_note": "Random Forest model score, not a calibrated real-world attrition probability."
+}
