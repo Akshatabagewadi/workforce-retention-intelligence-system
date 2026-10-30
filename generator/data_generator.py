@@ -199,8 +199,8 @@ def generate_employee_histories():
                     compensation_id=f"COMP-{compensation_counter:08d}",
                     employee_id=employee.employee_id,
                     band_name=f"Band {band_number}",
-                    min_salary=300000 * band_number,
-                    max_salary=300000 * band_number + 199999,
+                    minimum_salary=300000 * band_number,
+                    maximum_salary=300000 * band_number + 199999,
                     effective_from=snapshot_date,
                     effective_to=None,
                 )
