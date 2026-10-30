@@ -294,6 +294,4 @@ Human review and contextual assessment are necessary before any intervention.
 - Automated reproducibility and integration tests
 - Improved reporting and deployment
 
-## 15. Author
 
-**Developed as a 72-hour AI Forward Deployed Engineer Code Challenge project.**
